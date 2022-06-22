@@ -13,6 +13,13 @@ public:
 		height = H;
 		cout << " онструктор MyWindow" << endl;
 	}
+	//конструктор с параметрами от родительского класса
+	MyWindow(int width, int height, int x, int y):Point(x,y) {
+		this->width = width;
+		this->height = height;
+	}
+
+
 	~MyWindow() { cout << "ƒеструктор MyWindow" << endl; }
 
 	//получение ширины

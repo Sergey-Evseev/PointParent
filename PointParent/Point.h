@@ -13,6 +13,13 @@ public:
 		y = 0;
 		cout << "Создался конструктор Point" << endl;
 	}
+	//конструктор род.класса с параметрами//
+	Point(int x, int y) {
+		this->x = x;
+		this->y = y;
+	}
+
+
 	~Point() {
 		cout << "Деструктор Point" << endl;
 	}
